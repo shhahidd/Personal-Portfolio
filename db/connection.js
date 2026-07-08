@@ -13,14 +13,18 @@ function convertSqliteToPostgres(sql) {
   return pgSql.replace(/\?/g, () => `$${index++}`);
 }
 
-if (process.env.DATABASE_URL) {
-  console.log('Production Environment Detected: Connecting to Cloud PostgreSQL...');
+if (process.env.DATABASE_URL || process.env.NETLIFY || process.env.LAMBDA_TASK_ROOT || process.env.NODE_ENV === 'production') {
+  console.log('Production/Serverless Environment Detected: Connecting to Cloud PostgreSQL...');
   
   const pool = new Pool({
-    connectionString: process.env.DATABASE_URL,
+    connectionString: process.env.DATABASE_URL || '',
     ssl: {
       rejectUnauthorized: false
     }
+  });
+
+  pool.on('error', (err) => {
+    console.error('Unexpected error on idle pg client:', err);
   });
 
   db = {
