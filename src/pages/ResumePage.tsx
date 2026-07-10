@@ -31,21 +31,18 @@ export default function ResumePage() {
           </Button>
         </div>
 
-        {/* Embedded PDF via Google Drive preview — no download dialog */}
+        {/* Resume Image View */}
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.4 }}
-          className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl"
-          style={{ height: "85vh" }}
+          className="mx-auto w-full max-w-4xl"
         >
-          <iframe
-            src={resumeContent.embedUrl}
-            title={`${personalInfo.fullName} Resume`}
-            width="100%"
-            height="100%"
-            style={{ border: "none" }}
-            allow="autoplay"
+          <img
+            src="/resume/Shahid.jpg"
+            alt={`${personalInfo.fullName} Resume`}
+            className="w-full rounded-2xl border border-white/10 shadow-2xl"
+            draggable={false}
           />
         </motion.div>
       </motion.section>

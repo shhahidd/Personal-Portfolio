@@ -1,10 +1,11 @@
 import thiranexLogo from "../assets/thiranex_logo.png";
-import nextLogo from "../assets/next_logo.svg";
 import resumeLogo from "../assets/resume_logo.jpg";
 import resumeLogoDark from "../assets/resume_logo_dark.jpg";
 import stAgnesLogo from "../assets/st_agnes_logo.png";
 import ecommerceWebAppImg from "../assets/ecommerce_web_app.png";
 import vehicleRecognitionImg from "../assets/vehicle_recognition_system.png";
+import attendanceCalculatorImg from "../assets/attendance_calculator.png";
+
 
 import {
   GitHubIcon,
@@ -181,10 +182,10 @@ export const projectsData: BioDataType[] = [
   {
     id: "attendance-calculator",
     category: "projects",
-    img: nextLogo,
+    img: attendanceCalculatorImg,
     imgClass:
-      "scale-50 object-contain group-hover:scale-55 group-focus-visible:scale-55 transition py-20",
-    bgColor: "#fff",
+      "object-cover transition scale-90 group-hover:scale-100 group-focus-visible:scale-100",
+    bgColor: "#1b2834",
     title: "Attendance Calculator",
     description:
       "A web application designed for students to track daily attendance, manage schedule thresholds, and calculate the number of classes required to maintain a target percentage.",
