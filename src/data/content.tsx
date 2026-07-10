@@ -20,7 +20,7 @@ export const personalInfo = {
   firstName: "Shahid",
   lastName: "Patel",
   title: "Full-Stack Developer",
-  bioParagraph: "Full-Stack Developer with hands-on experience building scalable backends and highly responsive user interfaces. Specializing in React, Node.js, Express, FastAPI, PostgreSQL, Python, and TypeScript. Experienced in designing robust database layers, RESTful API gateways, and interactive web tools.",
+  bioParagraph: "An individual interested in computer science, software development, and data driven systems. Built academic projects using web technologies while exploring areas such as computer vision, APIs, and databases. Focused on learning new technologies and strengthening problem solving and communication skills through practical work..",
 };
 
 // Hero Section Copy
@@ -159,7 +159,7 @@ export const projectsData: BioDataType[] = [
       "React application utilizing OCR to detect vehicles, extract license plate numbers, and log entries in Supabase database.",
     fullInfo:
       "Developed a React based application to detect vehicles and extract number plate text using OCR.<ol><li>Processes vehicle images to parse and extract alphanumeric characters in real-time.</li><li>Implemented Tesseract.js for number plate recognition from uploaded images.</li><li>Integrated Supabase database to store vehicle detection results.</li><li>Built responsive UI using TailwindCSS and modern React components.</li></ol>",
-    website: "https://github.com/shhahidd/Vehicle-Recognition-System",
+    website: "https://vehiclerecognitionsystem.vercel.app",
     github: "https://github.com/shhahidd/Vehicle-Recognition-System",
     dates: "",
   },
@@ -175,8 +175,22 @@ export const projectsData: BioDataType[] = [
       "Full-stack shopping application built with Node.js, Express.js, and JWT auth, featuring admin panel and Supabase/MySQL integration.",
     fullInfo:
       "Developed a full-stack e-commerce web application using Node.js, Express.js, JavaScript, HTML, and CSS.<ol><li>Implemented JWT authentication, shopping cart, checkout, and order management features.</li><li>Built an admin dashboard for product and order management with CRUD functionality.</li><li>Integrated Supabase, MySQL, MongoDB, and JSON-based storage for flexible data management.</li><li>Designed a responsive user interface with product search, filtering, and inventory management.</li></ol>",
-    website: "https://github.com/shhahidd",
-    github: "https://github.com/shhahidd",
+    website: "https://corsair-e-commerce-web-app.vercel.app",
+    github: "https://github.com/shhahidd/E-Commerce-Web-Application",
+    dates: "",
+  },
+  {
+    id: "biterite",
+    category: "projects",
+    img: resumeLogoDark,
+    imgDark: resumeLogo,
+    title: "BiteRite Smart Nutrition",
+    description:
+      "AI-powered health and nutrition platform developed during a college Hackathon. Features calorie tracking, meal logging, fasting timer, sleep, workout, and Ollama-based meal generation.",
+    fullInfo:
+      "Developed **BiteRite**, an AI-powered health and nutrition platform during a college Mini Hackathon, later winning **1st Prize** for innovation and implementation.<ol><li>Built a comprehensive nutrition dashboard featuring calorie tracking, meal logging, water intake, fasting timer, sleep, workout, and activity monitoring.</li><li>Implemented AI-powered features, including personalized nutrition recommendations, meal suggestions, and ingredient-based meal generation using **Phi-3 (Ollama)**.</li><li>Developed smart meal-planning tools such as an AI-based grocery list generator, \"My Fridge\" ingredient-based meal recommendations, and food nutrition search.</li><li>Built the application using **React, Node.js, Express, Supabase**, and **JSON/CSV datasets**, delivering a functional prototype within the hackathon timeframe.</li></ol>",
+    website: "https://github.com/shhahidd/BiteRite",
+    github: "https://github.com/shhahidd/BiteRite",
     dates: "",
   },
   {
@@ -192,21 +206,7 @@ export const projectsData: BioDataType[] = [
     fullInfo:
       "Developed a responsive web application to calculate and track college/school attendance.<ol><li>Vibe-coded a responsive HTML, CSS, and JavaScript web application to help students calculate and manage their attendance.</li><li>Instantly calculates current attendance percentage based on classes attended and conducted.</li><li>Determines how many classes can be skipped or need to be attended to reach a target attendance percentage.</li><li>Features a clean, responsive interface optimized for desktop and mobile devices.</li></ol>",
     dates: "",
-    website: "https://github.com/shhahidd/Attendance-Calculator",
-    github: "https://github.com/shhahidd/Attendance-Calculator",
-  },
-  {
-    id: "biterite",
-    category: "projects",
-    img: resumeLogoDark,
-    imgDark: resumeLogo,
-    title: "BiteRite Smart Nutrition",
-    description:
-      "A web-based health and nutrition dashboard developed during a college Hackathon. Helps users track water, fasts, and steps.",
-    fullInfo:
-      "A web-based dashboard designed to help users track their daily health and wellness goals.<ol><li>Tracks calories, water intake, fasting schedules, and water intake.</li><li>Logs sleep cycles and counts daily steps.</li><li>Saves data locally using browser LocalStorage for immediate persistence.</li></ol>",
-    website: "https://github.com/shhahidd/BiteRite",
-    github: "https://github.com/shhahidd/BiteRite",
-    dates: "",
+    website: "http://shhahidd.github.io/AttendanceCalculator",
+    github: "https://github.com/shhahidd/AttendanceCalculator",
   },
 ];
