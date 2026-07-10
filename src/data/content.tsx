@@ -157,7 +157,7 @@ export const projectsData: BioDataType[] = [
     description:
       "React application utilizing OCR to detect vehicles, extract license plate numbers, and log entries in Supabase database.",
     fullInfo:
-      "Developed a React based application to detect vehicles and extract number plate text using OCR.<ol><li>Developed a React based application to detect vehicles and extract number plate text using OCR.</li><li>Implemented Tesseract.js for number plate recognition from uploaded images.</li><li>Integrated Supabase database to store vehicle detection results.</li><li>Built responsive UI using TailwindCSS and modern React components.</li></ol>",
+      "Developed a React based application to detect vehicles and extract number plate text using OCR.<ol><li>Processes vehicle images to parse and extract alphanumeric characters in real-time.</li><li>Implemented Tesseract.js for number plate recognition from uploaded images.</li><li>Integrated Supabase database to store vehicle detection results.</li><li>Built responsive UI using TailwindCSS and modern React components.</li></ol>",
     website: "https://github.com/shhahidd/Vehicle-Recognition-System",
     github: "https://github.com/shhahidd/Vehicle-Recognition-System",
     dates: "",
