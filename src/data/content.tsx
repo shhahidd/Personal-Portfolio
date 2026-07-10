@@ -5,8 +5,6 @@ import vehicleRecognitionImg from "../assets/vehicle_recognition_system.png";
 import attendanceCalculatorImg from "../assets/attendance_calculator.png";
 import biteriteImg from "../assets/biterite.png";
 
-
-
 import {
   GitHubIcon,
   LetterIcon,
@@ -148,22 +146,6 @@ export const educationData: BioDataType[] = [
 
 export const projectsData: BioDataType[] = [
   {
-    id: "vehicle-recognition",
-    category: "projects",
-    img: vehicleRecognitionImg,
-    bgColor: "#1b1c1d",
-    imgClass:
-      "object-cover transition scale-90 group-hover:scale-100 group-focus-visible:scale-100",
-    title: "Vehicle Recognition and Plate Detection System",
-    description:
-      "React application utilizing OCR to detect vehicles, extract license plate numbers, and log entries in Supabase database.",
-    fullInfo:
-      "Developed a React based application to detect vehicles and extract number plate text using OCR.<ol><li>Processes vehicle images to parse and extract alphanumeric characters in real-time.</li><li>Implemented Tesseract.js for number plate recognition from uploaded images.</li><li>Integrated Supabase database to store vehicle detection results.</li><li>Built responsive UI using TailwindCSS and modern React components.</li></ol>",
-    website: "https://vehiclerecognitionsystem.vercel.app",
-    github: "https://github.com/shhahidd/Vehicle-Recognition-System",
-    dates: "",
-  },
-  {
     id: "ecommerce-app",
     category: "projects",
     img: ecommerceWebAppImg,
@@ -177,6 +159,22 @@ export const projectsData: BioDataType[] = [
       "Developed a full-stack e-commerce web application using Node.js, Express.js, JavaScript, HTML, and CSS.<ol><li>Implemented JWT authentication, shopping cart, checkout, and order management features.</li><li>Built an admin dashboard for product and order management with CRUD functionality.</li><li>Integrated Supabase, MySQL  and JSON-based storage for flexible data management.</li><li>Designed a responsive user interface with product search, filtering, and inventory management.</li></ol>",
     website: "https://corsair-e-commerce-web-app.vercel.app",
     github: "https://github.com/shhahidd/E-Commerce-Web-Application",
+    dates: "",
+  },
+  {
+    id: "vehicle-recognition",
+    category: "projects",
+    img: vehicleRecognitionImg,
+    bgColor: "#1b1c1d",
+    imgClass:
+      "object-cover transition scale-90 group-hover:scale-100 group-focus-visible:scale-100",
+    title: "Vehicle Recognition and Plate Detection System",
+    description:
+      "React application utilizing OCR to detect vehicles, extract license plate numbers, and log entries in Supabase database.",
+    fullInfo:
+      "Developed a React based application to detect vehicles and extract number plate text using OCR.<ol><li>Processes vehicle images to parse and extract alphanumeric characters in real-time.</li><li>Implemented Tesseract.js for number plate recognition from uploaded images.</li><li>Integrated Supabase database to store vehicle detection results.</li><li>Built responsive UI using TailwindCSS and modern React components.</li></ol>",
+    website: "https://vehiclerecognitionsystem.vercel.app",
+    github: "https://github.com/shhahidd/Vehicle-Recognition-System",
     dates: "",
   },
   {
