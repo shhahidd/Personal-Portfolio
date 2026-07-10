@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+@plugin "./plugin";
+@source "../node_modules/@barrelrolla/react-components-library/";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+* {
+  scrollbar-width: thin;
+}
+
+:root {
+  --color-main: #dad6cf;
+  --color-main-content: #4c5c5a;
+  --color-primary: #dad6cf;
+  --color-primary-content: #4c5c5a;
+  --default-font-weight: 300;
+  --radius-navigation: 0;
+  --border-navigation: 1px;
+  scrollbar-gutter: stable;
+  --ring-offset: 8px;
+  --ring-blur: 20px;
+}
+
+.dark {
+  --color-main: #4c5c5a;
+  --color-main-content: #dad6cf;
+  --color-primary: #4c5c5a;
+  --color-primary-content: #dad6cf;
+}
+
+@theme {
+  --font-sans: "Rubik",
+    sans-serif;
+  --font-serif: "Cinzel",
+    serif;
+}
+
+@media (width >=40rem) {
+  :root {
+    --ring-offset: 12px;
+    --ring-blur: 30px;
+  }
+}
+
+@media (width >=80rem) {
+  :root {
+    --ring-offset: 16px;
+    --ring-blur: 40px;
+  }
+}
+
+@utility animate-slow-spin {
+  overflow-anchor: none;
+  animation: slow-spin 8s linear infinite;
+}
+
+@keyframes slow-spin {
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@utility grid-left {
+  p {
+    text-align: end;
+  }
+}
+
+.height-hero {
+  @apply h-screen min-h-[400px] max-h-[1024px]
+}
+
+.hero-ring {
+  box-shadow:
+    var(--ring-offset) calc(var(--ring-offset) * -1) var(--ring-blur),
+    calc(var(--ring-offset) * -1) var(--ring-offset) var(--ring-blur);
+}
+
+.hero-text-shadow {
+  --blur: calc(var(--ring-blur) / 4);
+  text-shadow:
+    1px 1px var(--blur) var(--color-main),
+    -1px -1px var(--blur) var(--color-main),
+    -1px 1px var(--blur) var(--color-main),
+    1px -1px var(--blur) var(--color-main);
+}
+
+.bio-container {
+  @apply mt-6 flex flex-col gap-6 items-end md:items-stretch;
+}
+
+p>ol>li {
+  @apply list-disc list-inside my-4;
+}
+
+.animate-fade-out {
+  animation: fade-out 300ms linear forwards
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+    display: none;
+  }
+}
