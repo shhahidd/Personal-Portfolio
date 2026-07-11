@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLocation, useParams } from "react-router";
+import { useLocation, useParams, Link } from "react-router";
 import {
   Button,
   Card,
@@ -106,6 +106,14 @@ export default function DetailsPage() {
                 Repo
               </Button>
             )}
+            {/*data.certificate && (
+              <Button
+                as={Link}
+                to={`/certificate/${data.id}`}
+              >
+                View Certificate
+              </Button>
+            )*/}
           </div>
         </motion.div>
       )}

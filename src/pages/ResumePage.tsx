@@ -2,6 +2,7 @@ import BasePage from "../components/Page/BasePage";
 import { motion } from "motion/react";
 import { Button } from "@barrelrolla/react-components-library";
 import { resumeContent, personalInfo } from "../data/content";
+import resumeImage from "../assets/ShahidPatel.jpg";
 
 export default function ResumePage() {
   document.title = `${personalInfo.fullName} | Resume`;
@@ -14,7 +15,6 @@ export default function ResumePage() {
         transition={{ duration: 0.4 }}
         className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 py-10"
       >
-        {/* Header row */}
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div>
             <h1 className="text-3xl font-semibold">{resumeContent.title}</h1>
@@ -31,7 +31,6 @@ export default function ResumePage() {
           </Button>
         </div>
 
-        {/* Resume Image View */}
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -39,7 +38,7 @@ export default function ResumePage() {
           className="mx-auto w-full max-w-4xl"
         >
           <img
-            src="/resume/Shahid.jpg"
+            src={resumeImage}
             alt={`${personalInfo.fullName} Resume`}
             className="w-full rounded-2xl border border-white/10 shadow-2xl"
             draggable={false}

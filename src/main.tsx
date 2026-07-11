@@ -13,6 +13,7 @@ import NotFound from "./pages/NotFound";
 import BioLayout from "./layouts/BioLayout";
 import RootLayout from "./layouts/RootLayout";
 import { navLinks } from "./data/navLinks";
+import CertificatePage from "./pages/CertificatePage";
 import "./index.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
         Component: HomePage,
       },
       ...navRoutes,
+      {
+        path: "certificate/:id",
+        Component: CertificatePage,
+      },
       {
         path: "*",
         Component: NotFound,

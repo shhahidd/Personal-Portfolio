@@ -4,6 +4,8 @@ import ecommerceWebAppImg from "../assets/ecommerce_web_app.png";
 import vehicleRecognitionImg from "../assets/vehicle_recognition_system.png";
 import attendanceCalculatorImg from "../assets/attendance_calculator.png";
 import biteriteImg from "../assets/biterite.png";
+import thiranexCertificate from "../assets/thiranex_internship.png";
+import resumePdf from "../assets/ShahidPatel.pdf";
 
 import {
   GitHubIcon,
@@ -12,16 +14,14 @@ import {
   PhoneIcon,
 } from "@barrelrolla/react-components-library";
 
-// Core Personal Info
 export const personalInfo = {
   fullName: "Shahid Patel",
   firstName: "Shahid",
   lastName: "Patel",
   title: "Full-Stack Developer",
-  bioParagraph: "An individual interested in computer science, software development, and data driven systems. Built academic projects using web technologies while exploring areas such as computer vision, APIs, and databases. Focused on learning new technologies and strengthening problem solving and communication skills through practical work..",
+  bioParagraph: "Full Stack Developer with a strong interest in computer vision and AI driven systems. Built projects including a vehicle recognition and number plate detection system, an AI powered nutrition planner, and Full Stack Web applications using React, Node.js, and Supabase. Focused on writing clean, working code and continuously exploring new tools and technologies.",
 };
 
-// Hero Section Copy
 export const heroContent = {
   titlePart1: "Shahid",
   titlePart2: "Patel",
@@ -31,36 +31,30 @@ export const heroContent = {
   contactsBtn: "My contacts",
 };
 
-// Navbar & Footer General Labels
 export const navContent = {
   brandName: "<Shahid.P/>",
   resumeBtn: "View Resume",
 };
 
-// Contacts Page Copy
 export const contactsContent = {
   heading: "Contact Me",
   tagline: "I'm available on almost every platform. Send me a message and I'll reply within 24 hours.",
   resumeCta: "See My Resume",
 };
 
-// Resume Page Details
 export const resumeContent = {
   title: "My Resume",
   subtitle: "View below or download a copy for your records.",
   downloadCta: "↓ Download PDF",
-  embedUrl: "https://drive.google.com/file/d/1vFa5G3BPJvXLknQpQ1lg4BwQoKqxPFC2/preview",
-  downloadUrl: "https://drive.usercontent.google.com/download?id=1vFa5G3BPJvXLknQpQ1lg4BwQoKqxPFC2&export=download&authuser=0&confirm=t&uuid=accdc092-3872-4546-a7db-77ee1e3f4ad0&at=ABswASYe1hrG6S63sgcj8yqeuX_R:1783632232030",
+  downloadUrl: resumePdf,
 };
 
-// Homepage Section Headings
 export const homeSectionTitles = {
   experience: "Experience",
   education: "Education",
   projects: "Projects",
 };
 
-// Social Contacts
 export const contacts = [
   {
     title: "Github",
@@ -104,6 +98,7 @@ export type BioDataType = {
   github?: string;
   imgClass?: string;
   bgColor?: string;
+  certificate?: string;
 };
 
 export const experienceData: BioDataType[] = [
@@ -122,6 +117,7 @@ export const experienceData: BioDataType[] = [
     bgColor: "#fff",
     imgClass:
       "scale-90 object-contain group-hover:scale-100 group-focus-visible:scale-100 transition py-6",
+    certificate: thiranexCertificate,
   },
 ];
 
