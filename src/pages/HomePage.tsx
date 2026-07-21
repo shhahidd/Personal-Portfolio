@@ -10,7 +10,7 @@ import { HomePageContextProvider } from "../contexts.ts/HomaPageContext";
 import { personalInfo, homeSectionTitles } from "../data/content";
 
 export default function HomePage() {
-  document.title = personalInfo.fullName;
+  document.title = "Shahid Patel | Portfolio";
 
   function checkNeedButton() {
     const innerHeight = window.innerHeight;
