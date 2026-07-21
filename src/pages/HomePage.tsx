@@ -7,7 +7,7 @@ import Projects from "../components/Content/Projects";
 import BasePage from "../components/Page/BasePage";
 import { motion } from "motion/react";
 import { HomePageContextProvider } from "../contexts.ts/HomaPageContext";
-import { personalInfo, homeSectionTitles } from "../data/content";
+import { homeSectionTitles } from "../data/content";
 
 export default function HomePage() {
   document.title = "Shahid Patel | Portfolio";
