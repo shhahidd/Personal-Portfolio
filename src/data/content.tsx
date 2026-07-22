@@ -5,7 +5,7 @@ import vehicleRecognitionImg from "../assets/vehicle_recognition_system.png";
 import attendanceCalculatorImg from "../assets/attendance_calculator.png";
 import biteriteImg from "../assets/biterite.png";
 import thiranexCertificate from "../assets/thiranex_internship.png";
-import resumePdf from "../assets/ShahidPatel.pdf";
+
 
 import {
   GitHubIcon,
@@ -46,7 +46,7 @@ export const resumeContent = {
   title: "My Resume",
   subtitle: "View below or download a copy for your records.",
   downloadCta: "↓ Download PDF",
-  downloadUrl: resumePdf,
+  downloadUrl: "/ShahidPatel.pdf",
 };
 
 export const homeSectionTitles = {
