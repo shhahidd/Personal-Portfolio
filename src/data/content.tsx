@@ -4,7 +4,7 @@ import ecommerceWebAppImg from "../assets/ecommerce_web_app.png";
 import vehicleRecognitionImg from "../assets/vehicle_recognition_system.png";
 import attendanceCalculatorImg from "../assets/attendance_calculator.png";
 import biteriteImg from "../assets/biterite.png";
-import thiranexCertificate from "../assets/thiranex_internship.png";
+import thiranexCertificate from "../assets/ThiranexCompletionCertificate.jpg";
 
 
 import {
