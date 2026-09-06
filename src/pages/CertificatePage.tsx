@@ -71,7 +71,7 @@ export default function CertificatePage() {
           <img
             src={data.certificate}
             alt={`${data.title} Certificate`}
-            className="w-full rounded-2xl border border-white/10 shadow-2xl"
+            className="w-full border border-white/10 shadow-2xl"
             draggable={false}
           />
         </motion.div>
